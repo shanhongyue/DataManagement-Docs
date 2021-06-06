@@ -1,0 +1,17 @@
+# Setup
+title:        Data Management
+tagline:      A database-like file management app
+baseurl:      "/"
+paginate:     1
+
+# About/contact
+author:
+  name:       ShanHongyue
+  url:        https://shanhongyue.github.io/ 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown

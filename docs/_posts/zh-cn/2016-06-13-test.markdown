@@ -1,0 +1,8 @@
+---
+layout: help-zh-cn
+title:  "图片测试"
+date:   2016-06-13 17:50:00
+categories: zh-cn
+---
+
+![]({{ site.url }}{{ site.baseurl }}/illustrations/2016-11-18_174319.png)

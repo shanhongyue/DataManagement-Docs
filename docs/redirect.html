@@ -1,0 +1,16 @@
+---
+layout: redirect
+title: {{ site.name }}
+---
+
+<script>
+    if (location.hash != "" && location.hash != "#") {
+        if (navigator.language.indexOf("zh-") > -1) {
+            location.replace("{{ site.baseurl }}" + "/zh-cn" + location.hash.substring(1));
+        } else {
+            location.replace("{{ site.baseurl }}" + "/en-us" + location.hash.substring(1));
+        }
+    } else {
+        location.replace("{{ site.baseurl }}");
+    }
+</script>

@@ -1,0 +1,10 @@
+---
+layout: empty
+---
+{% include page-header-help-en-us.html %}
+<section class="main-content">
+    <h2>{{ page.title }}</h2>
+    <p class="meta">{{ page.date | date_to_string }}</p>
+    {{ content }}
+    {% include page-footer-help-en-us.html %}
+</section>

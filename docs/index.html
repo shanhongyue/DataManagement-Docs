@@ -1,0 +1,27 @@
+---
+layout: default
+title: {{ site.name }}
+---
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.slim.min.js"></script>
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li class="{{ post.categories }}"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<script>
+    $(function(){
+        if (navigator.language.indexOf("zh-") > -1) {
+            $(".en-us").remove();
+            $("h1.project-name").text("数据管理");
+            $("h2.project-tagline").text("像数据库的文件管理器");
+            $("span.site-footer-owner").html("<a href=\"{{ site.url }}{{ site.baseurl }}/\">数据管理</a> 由 <a href=\"{{ site.author.url }}\">山宏岳</a> 维护。");
+        } else {
+            $(".zh-cn").remove();
+       }
+    });
+</script>
